@@ -1,0 +1,13 @@
+/* element.style {
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #003221;
+    border-color: #005cbf;
+} */
+
+#play-thank-you-sir {
+    color: #a06d19;
+    background-color: white;
+    font-size: 250%;
+}
