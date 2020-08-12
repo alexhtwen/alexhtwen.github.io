@@ -1,0 +1,28 @@
+
+.card-header {
+    background-color: #F4F8F8;
+}
+
+.card-body {
+    background-color: #FFFFF7;
+    color: rgb(5, 40, 138);
+}
+
+.instructor-ul > li, a{
+ font-family: "Noto Sans TC", sans-serif, "Microsoft YaHei" !important;
+ /* color: rgb(5, 40, 138); */
+ /* color: green; */
+}
+
+
+.instructor-ul {
+    display: block;
+    list-style-type: disc;
+    /* margin-block-start: 1em; */
+    /* margin-block-end: 3em; */
+    margin-inline-start: 4.5em;
+    margin-inline-end: 5em;
+    padding-inline-start: 0px;
+    padding: 0px;
+    line-height: 200%;
+  }
