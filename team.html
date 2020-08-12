@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>謝師網-Team</title>
+
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/font-awesome5.12.0.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:200,400,700,900|Noto+Serif+TC:300,600,900&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+    <link rel="stylesheet" href="./lib/_common/fonts.css">
+    <link rel="stylesheet" href="./lib/_team/team.css"> -->
+
+    <!-- csslinks starts-->
+    <div w3-include-html="./csslinks.html"></div>
+    <!-- csslinks ends -->
+    <link rel="stylesheet" href="./lib/_team/team.css">
+
+    <style type="text/css">
+      .Dcenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      .line {
+        border: 3px solid red;
+        cursor: pointer;
+      }
+
+      .imgopacity {
+        opacity: 0.1;
+        filter: alpha(opacity=50);
+      }
+
+      .hover {
+        cursor: pointer;
+        background-color: yellow;
+      }
+
+      /*
+    #Timg {
+      opacity: 0.1;
+      filter: alpha(opacity=50);
+    }
+
+    #Timg:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+    }
+   */
+
+      .hidden {
+        display: none;
+      }
+    </style>
+
+    <style>
+      body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 100%;
+        background-size: 25% background-image, "url(./assets/images/team/teamwork1.jpeg)";
+        background-color: rgb(235, 230, 224);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class='container-fluid'>
+      <!-- 不能用下列的寫法，否則background image無法顯示，原因不詳。 -->
+      <!-- <div style="background-color:rgb(235, 230, 224)"> -->
+
+      <!-- navbar starts-->
+      <div w3-include-html="./navbar.html"></div>
+      <!-- navbar ends -->
+
+      <!-- title starts -->
+      <div class="row mt-4 animatedParent">
+        <!-- <div class="col-12 text-center title1 wow bounceOutUp" data-wow-delay="0.8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;"> -->
+        <div class="col-12 text-center title1 animated rotateIn slower">
+          網站工作團隊
+        </div>
+      </div>
+      <!-- title ends -->
+
+      <div class="row mt-3">
+        <div class="col-12 mt-2">
+          <div class="card m-auto" style="width1: 60rem; border-style:none; background-color: rgb(235, 230, 224);">
+            <!-- <img src="" class=" d-block w-100" alt="..."> -->
+            <div id="switcher">
+              <img src="./assets/images/team/teamwork2.jpeg" id='teamwork2' class="d-block w-100 rounded" alt="..." alt="">
+              <h2 id='come-meet'></h2>
+            </div>
+          </div>
+          <div id="curtain" style="background:yellow;height:5px;width:5px;position:absolute;">
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 py-0">
+        <div class="col-12 m-0 py-0">
+          <span class='hidden'>
+            <h3 class='noto-sans font-weight-700 line-height-80 text-center'><br>
+              <span class='font-size-108'>專案經理：</span>
+              <a href="./assets/images/team/alex.jpg" target="_blank" class='font-size-108'>
+                <span class='text-primary font-size-100'>Alex</span><br>
+              </a>
+            </h3>
+          </span>
+        </div>
+      </div>
+
+      <div class='row m-0 py-0'>
+        <!-- 隔一個col -->
+        <div class='col-0 col-sm-0 col-md-0 col-lg-1 m-0 py-0'>
+        </div>
+        <div class='col-12 col-sm-10 col-md-6 col-lg-5 m-0 py-0'>
+          <span class='hidden'>
+            <h4 class='noto-sans font-weight-700 line-height-100'><br>
+              <span class='font-size-108'>版面設計： </span><span class='text-dark font-size-108'>夢梅, 振泰</span><br>
+              <span class=' font-size-70 line-height-75'></span><br>
+              <span class='font-size-108'>程式撰寫： </span>
+              <span class='text-primary font-size-108'>
+                <a href="./assets/images/team/alex.jpg" target="_blank" class='font-size-100'>
+                  <span class='text-primary font-size-100'>Alex(兼)</span>
+                </a><span class="font-size-100">, 明志</span>
+              </span><br>
+
+              <span class=' font-size-70 line-height-75'></span><br>
+              <span class='font-size-108'>錄音解說： </span><span class='text-dark font-size-108'>琪雅, </span>
+              <a href="./assets/images/team/misaki.jpg" target="_blank" class='font-size-100'>
+                <span class='text-primary font-size-108'>俞潔</span>
+              </a><br>
+              <span class=' font-size-70 line-height-75'></span><br>
+              <span class='font-size-108'>日本特派： </span><span class='text-dark font-size-108'>Ryan</span>
+            </h4>
+          </span>
+        </div>
+
+        <!-- 隔一個col -->
+        <div class='col-0 col-sm-0 col-md-1'>
+        </div>
+
+        <div class='col-12 col-sm-10 col-md-6 col-lg-5 m-0 py-0'>
+          <span class='hidden'>
+            <h4 class='noto-sans font-weight-700 line-height-100'><br>
+              <span class='font-size-108'>花絮撰寫： </span>
+              <!-- <span class='text-primary font-size-108'> -->
+              <!-- Spring, 建安</span><br> -->
+              <span class='text-primary font-size-108'>
+                <a href="./assets/images/team/spring.jpg" target="_blank" class='font-size-100'>
+                  <span class='text-primary font-size-100'>Spring</span>
+                </a><span class="font-size-100">, 建安</span>
+              </span><br>
+              <span class='font-size-70 line-height-75'></span><br>
+              <span class='font-size-108'>攝影小組： </span>
+              <span class='text-dark font-size-108'>湘偵, </span>
+              <a href="./assets/images/team/andy.jpg" target="_blank" class='font-size-100'>
+                Andy
+              </a>
+              <span class='text-dark font-size-108'>, </span>
+              <a href="./assets/images/team/victor.jpg" target="_blank" class='font-size-100'>
+                <span class='text-primary font-size-108'>振毅</span>
+              </a>
+              <br>
+              <span class=' font-size-70 line-height-75'></span><br>
+              <span class='font-size-108'>邀稿催稿： </span>
+              <span class='text-primary font-size-108'>
+                <a href="./assets/images/team/CK.jpg" target="_blank" class='font-size-100'>
+                  <span class='text-primary font-size-100'>志光</span>
+                </a>,
+                <a href="./assets/images/team/oliver.jpg" target="_blank" class='font-size-100'>
+                  Oliver
+                </a>
+              </span><br>
+              <span class=' font-size-70 line-height-75'></span><br>
+              <span class='font-size-108'>潤稿審稿： </span>
+              <span class='text-primary font-size-108'>
+                <a href="./assets/images/team/spring.jpg" target="_blank" class='font-size-100'>
+                  <span class='text-primary font-size-100'>Spring</span>
+                </a>
+              </span>
+
+              <!-- <span class='font-size-108'>庶務財務： </span><span class='text-primary font-size-110'>湘偵, 振毅</span> -->
+            </h4>
+          </span>
+        </div>
+      </div>
+
+      <!-- 製造一些空行 -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- footer starts -->
+      <div w3-include-html="./footer.html">
+      </div>
+      <!-- footer ends -->
+      <!-- </div> -->
+    </div>
+  </body>
+
+  <script src="./lib/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="./lib/font-awesome/font-awesome5.12.1.all.js"></script>
+  <script src="./lib/popper/1.16.1/popper.min.js"></script>
+  <script src="./lib/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="./lib/jQuery/jquery.easing.min.js"></script> -->
+  <script src="./lib/wow/1.1.2/wow.min.js"></script>
+  <script src="./lib/typed/typed.js"></script>
+  <script src="./lib/animations/js/css3-animate-it.js"></script>
+  <script src="./lib/_common/main.js"></script>
+  <!-- <script src="./lib/bars/bars.js"></script> -->
+  <script src="./lib/_common/include.js"></script>
+  <script src="./lib/pure.js/2.83/pure.js"></script>
+  <script src="./lib/_team/team.js"></script>
+  <script src="./lib/_common/pureJsLinking.js"></script>
+
+</html>

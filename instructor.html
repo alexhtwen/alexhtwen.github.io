@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>謝師網--關於老師</title>
+
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/animate/animate.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/font-awesome5.12.0.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:200,400,700,900|Noto+Serif+TC:300,600,900&display=swap&subset=chinese-traditional" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/_common/fonts.css">
+    <link rel="stylesheet" href="./lib/_common/image.css"> -->
+    <link rel="stylesheet" href="./lib/_instructor/instructor.css">
+    <!-- csslinks starts-->
+    <div w3-include-html="./csslinks.html"></div>
+    <!-- csslinks ends -->
+
+  </head>
+
+  <body>
+    <div class='container-fluid'>
+      <div style="background-color:rgb(235, 230, 224)">
+
+        <!-- navbar starts-->
+        <div w3-include-html="./navbar.html"></div>
+        <!-- navbar ends -->
+
+        <!-- title starts -->
+        <div class="row mt-4 animatedParent">
+          <!-- <div class="col-12 text-center title1 wow bounceInRight" data-wow-delay="0.8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;"> -->
+          <div class="col-12 text-center title1 animated bounceInRight slower">
+            Amos老師個人資料
+          </div>
+        </div>
+        <!-- title ends -->
+
+        <!-- 老師個人照片及經歷 starts -->
+        <div class='row mt-3'>
+          <!-- 照片 starts -->
+          <div class='col-5 mt-2'>
+            <p>
+              <img src="./assets/images/instructor/老師照片.jpg" class="d-block w-100 rounded" alt="...">
+            </p>
+
+            <!-- <img src="./assets/images/instructor/amos-name-1.png" alt=""> -->
+            <!-- <img src="./assets/images/instructor/amos-name-2.png" alt=""> -->
+            <p class="m-auto text-center align-center">
+              <img src="./assets/images/instructor/amos-name-31.png" alt="">
+            </p>
+            <!-- <img src="./assets/images/instructor/amos-name-4.png" alt=""> -->
+          </div>
+          <!-- 照片 ends -->
+
+          <!-- 經歷 starts -->
+          <!-- <div class='col-7 mt-2'>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="heading">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-info noto-sans font-size-80 font-weight-700" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapse">
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionExample">
+                  <div class="card-body text-danger noto-sans font-size-150 font-weight-300 line-height-200">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- 經歷 ends -->
+
+          <!-- <div id='movie-info'>
+            <ul> 電影資料
+              <li>片名: {{ movie.title }}</li>
+              <li>年份: {{ movie.year }}</li>
+              <li>語言: {{ movie.lang }}</li>
+            </ul>
+          </div> -->
+
+          <!-- 經歷 starts -->
+          <div class='col-7 mt-2'>
+            <div class="accordion" id="accordionExample">
+              <!-- name -->
+              <div id='card-name' class="card">
+                <div class="card-header" :id="cardName.heading">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-info noto-sans font-size-80 font-weight-700" type="button" data-toggle="collapse" :data-target="cardName.dataTarget" :aria-expanded="cardName.ariaExpanded" :aria-controls="cardName.collapse">
+                      {{ cardName.title }}
+                    </button>
+                  </h2>
+                </div>
+                <div :id="cardName.collapse" class="collapse" :aria-labelledby="cardName.heading" data-parent="#accordionExample">
+                  <div class="card-body text-danger noto-sans font-size-150 font-weight-300 line-height-200">
+                    {{ cardName.content }}
+                  </div>
+                </div>
+              </div>
+
+              <!-- title -->
+              <div id='card-title' class="card">
+                <div class="card-header" :id="cardTitle.heading">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-info noto-sans font-size-80 font-weight-700" type="button" data-toggle="collapse" :data-target="cardTitle.dataTarget" :aria-expanded="cardTitle.ariaExpanded" :aria-controls="cardTitle.collapse">
+                      {{ cardTitle.title }}
+                    </button>
+                  </h2>
+                </div>
+                <div :id="cardTitle.collapse" class="collapse" :aria-labelledby="cardTitle.heading" data-parent="#accordionExample">
+                  <div class="card-body text-danger noto-sans font-size-150 font-weight-300 line-height-200">
+                    {{ cardTitle.content }}
+                  </div>
+                </div>
+              </div>
+
+              <!-- experience -->
+              <div id='card-experience' class="card">
+                <div class="card-header" :id="cardExperience.heading">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-info noto-sans font-size-80 font-weight-700" type="button" data-toggle="collapse" :data-target="cardExperience.dataTarget" :aria-expanded="cardExperience.ariaExpanded" :aria-controls="cardExperience.collapse">
+                      {{ cardExperience.title }}
+                    </button>
+                  </h2>
+                </div>
+                <div :id="cardExperience.collapse" class="collapse" :aria-labelledby="cardExperience.heading" data-parent="#accordionExample">
+                  <div class="card-body text-danger noto-sans font-size-150 font-weight-300 line-height-200">
+                    <ul class='instructor-ul'>
+                      <li class='text-danger font-size-135'>{{cardExperience.content[0]}}</li>
+                      <li class='text-danger font-size-135'>{{cardExperience.content[1]}}</li>
+                      <li class='text-danger font-size-135'>{{cardExperience.content[2]}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- teaching -->
+              <div id='card-teaching' class="card">
+                <div class="card-header" :id="cardTeaching.heading">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-info noto-sans font-size-80 font-weight-700" type="button" data-toggle="collapse" :data-target="cardTeaching.dataTarget" :aria-expanded="cardTeaching.ariaExpanded" :aria-controls="cardTeaching.collapse">
+                      {{ cardTeaching.title }}
+                    </button>
+                  </h2>
+                </div>
+                <div :id="cardTeaching.collapse" class="collapse" :aria-labelledby="cardTeaching.heading" data-parent="#accordionExample">
+                  <div class="card-body text-danger noto-sans font-size-150 font-weight-300 line-height-200">
+                    <ul class='instructor-ul'>
+                      <li class='text-danger font-size-135'>{{cardTeaching.content[0]}}</li>
+                      <li class='text-danger font-size-135'>{{cardTeaching.content[1]}}</li>
+                      <li class='text-danger font-size-135'>{{cardTeaching.content[2]}}</li>
+                      <li class='text-danger font-size-135'>{{cardTeaching.content[3]}}</li>
+                      <li class='text-danger font-size-135'>{{cardTeaching.content[4]}}</li>
+                      <li class='text-danger font-size-135'>{{cardTeaching.content[5]}}</li>
+                      <li class='text-danger font-size-135'>{{cardTeaching.content[6]}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- certificate -->
+              <div id='card-certificate' class="card">
+                <div class="card-header" :id="cardCertificate.heading">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-info noto-sans font-size-80 font-weight-700" type="button" data-toggle="collapse" :data-target="cardCertificate.dataTarget" :aria-expanded="cardCertificate.ariaExpanded" :aria-controls="cardCertificate.collapse">
+                      {{ cardCertificate.title }}
+                    </button>
+                  </h2>
+                </div>
+                <div :id="cardCertificate.collapse" class="collapse" :aria-labelledby="cardCertificate.heading" data-parent="#accordionExample">
+                  <div class="card-body text-danger noto-sans font-size-150 font-weight-300 line-height-200">
+                    <ul class='instructor-ul'>
+                      <li class='text-danger font-size-135'>{{cardCertificate.content[0]}}</li>
+                      <li class='text-danger font-size-135'>{{cardCertificate.content[1]}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- expertise -->
+              <div id='card-expertise' class="card">
+                <div class="card-header" :id="cardExpertise.heading">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-info noto-sans font-size-80 font-weight-700" type="button" data-toggle="collapse" :data-target="cardExpertise.dataTarget" :aria-expanded="cardExpertise.ariaExpanded" :aria-controls="cardExpertise.collapse">
+                      {{ cardExpertise.title }}
+                    </button>
+                  </h2>
+                </div>
+                <div :id="cardExpertise.collapse" class="collapse" :aria-labelledby="cardExpertise.heading" data-parent="#accordionExample">
+                  <div class="card-body text-danger noto-sans font-size-150 font-weight-300 line-height-200">
+                    <ul class='instructor-ul'>
+                      <li class='text-danger font-size-135'>{{cardExpertise.content[0]}}</li>
+                      <li class='text-danger font-size-135'>{{cardExpertise.content[1]}}</li>
+                      <li class='text-danger font-size-135'>{{cardExpertise.content[2]}}</li>
+                      <li class='text-danger font-size-135'>{{cardExpertise.content[3]}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- facebook -->
+              <div id='card-facebook' class="card">
+                <div class="card-header" :id="cardFacebook.heading">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-info noto-sans font-size-80 font-weight-700" type="button" data-toggle="collapse" :data-target="cardFacebook.dataTarget" :aria-expanded="cardFacebook.ariaExpanded" :aria-controls="cardFacebook.collapse">
+                      {{ cardFacebook.title }}
+                    </button>
+                  </h2>
+                </div>
+                <div :id="cardFacebook.collapse" class="collapse" :aria-labelledby="cardFacebook.heading" data-parent="#accordionExample">
+                  <div class="card-body text-danger noto-sans font-size-150 font-weight-300 line-height-200">
+                    <a class='text-danger font-size-110' :href="cardFacebook.content" target=_blank>{{ cardFacebook.content }}</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- blog -->
+              <div id='card-blog' class="card">
+                <div class="card-header" :id="cardBlog.heading">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-info noto-sans font-size-80 font-weight-700" type="button" data-toggle="collapse" :data-target="cardBlog.dataTarget" :aria-expanded="cardBlog.ariaExpanded" :aria-controls="cardBlog.collapse">
+                      {{ cardBlog.title }}
+                    </button>
+                  </h2>
+                </div>
+                <div :id="cardBlog.collapse" class="collapse" :aria-labelledby="cardBlog.heading" data-parent="#accordionExample">
+                  <div class="card-body text-danger noto-sans font-size-150 font-weight-300 line-height-200">
+                    <a class='text-danger font-size-110' :href="cardBlog.content" target=_blank>{{ cardBlog.content }}</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- ----------- -->
+            </div>
+          </div>
+
+
+
+
+          <!-- 經歷 ends -->
+        </div>
+        <!-- 老師個人照片及經歷 ends -->
+
+
+
+        <!-- footer starts -->
+        <div w3-include-html="./footer.html">
+        </div>
+        <!-- footer ends -->
+      </div>
+    </div>
+  </body>
+  <script src="./lib/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="./lib/font-awesome/font-awesome5.12.1.all.js"></script>
+  <script src="./lib/popper/1.16.1/popper.min.js"></script>
+  <script src="./lib/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="./lib/jQuery/jquery.easing.min.js"></script> -->
+  <script src="./lib/wow/1.1.2/wow.min.js"></script>
+  <script src="./lib/typed/typed.js"></script>
+  <script src="./lib/animations/js/css3-animate-it.js"></script>
+  <script src="./lib/_common/main.js"></script>
+  <!-- <script src="./lib/bars/bars.js"></script> -->
+  <script src="./lib/_common/include.js"></script>
+  <script src="./lib/pure.js/2.83/pure.js"></script>
+  <script src="./lib/_common/vendor.js"></script>
+  <!-- <script src="./lib/_instructor/instructor.js"></script> -->
+  <script src="./lib/_common/pureJsLinking.js"></script>
+  <script src="./lib/_instructor/instructorVue.js"></script>
+
+</html>

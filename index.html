@@ -4,22 +4,87 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex's ToDoList</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>謝師網--極簡首頁</title>
+
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/animate/animate.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/font-awesome5.12.0.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:200,400,700,900|Noto+Serif+TC:300,600,900&display=swap&subset=chinese-traditional" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/_common/fonts.css">
+    <link rel="stylesheet" href="./lib/_common/image.css">
+    <link rel="stylesheet" href="./lib/_index/index.css"> -->
+
+    <!-- csslinks starts-->
+    <div w3-include-html="./csslinks.html"></div>
+    <!-- csslinks ends -->
+    <style>
+      body {
+        background-color: rgb(235, 230, 224);
+      }
+    </style>
   </head>
 
   <body>
+    <div class="container-fluid">
 
+      <!-- Card starts -->
+      <div class="row mt-2 mb-0 py-0">
+        <div class="col-12 mt-3 mb-0 py-0">
+          <div class="card m-auto" style="width: 28rem; border-style:none;background-color: rgb(235, 230, 224); ">
+            <a href="./instructor.html">
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="12000">
+                <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"> -->
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="" class="d-block w-100 rounded" alt="...">
+                  </div>
+                </div>
+              </div>
+            </a>
 
-
-    <link rel="stylesheet" href="./toDoList.css">
-    <div class="container">
-      <div class="addList">
-        <input id="input-box" type="text" placeholder="請輸入待辦事項："></input>
-        <button id="add-btn" type="button">Click to Add</button>
+            <div class="card-body text-center animatedParent">
+              <!-- <div class="col-12 text-center wow11 animated bounceInDown slowest delay-250" data-wow-delay="3.5s" style="visibility: hidden; animation-delay11: 0.8s; animation-name: none;"> -->
+              <div class="col-12 text-center wow11 animated bounceInDown snail delay-4000">
+                <p class="title1 my-0 py-0">謝謝老師</p>
+                <p class="card-text title2 my-0 py-0" style="height:2rem;"><span class='font-size-80'>2019-2020網頁前端班全體同學合製</span></p>
+                <audio controls>
+                  <source src="./assets/audios/index/ThankAmos.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card ends -->
       </div>
-      <ul class="todo-list"></ul>
     </div>
-    <script src="./toDoList.js"></script>
   </body>
+
+  <!-- update the version number as needed -->
+  <!-- <script defer src="/__/firebase/7.14.1/firebase-app.js"></script> -->
+  <!-- include only the Firebase features as you need -->
+  <!-- <script defer src="/__/firebase/7.14.1/firebase-auth.js"></script> -->
+  <!-- <script defer src="/__/firebase/7.14.1/firebase-database.js"></script> -->
+  <!-- <script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script> -->
+  <!-- <script defer src="/__/firebase/7.14.1/firebase-storage.js"></script> -->
+  <!-- initialize the SDK after all desired features are loaded -->
+  <!-- <script defer src="/__/firebase/init.js"></script> -->
+  <!-- <script src=".."></script> -->
+
+  <!-- <script src="./lib/_common/include.js"></script> -->
+  <script src="./lib/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="./lib/_common/include.js"></script>
+  <script src="./lib/font-awesome/font-awesome5.12.1.all.js"></script>
+  <script src="./lib/popper/1.16.1/popper.min.js"></script>
+  <script src="./lib/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="./lib/jQuery/jquery.easing.min.js"></script> -->
+  <script src="./lib/wow/1.1.2/wow.min.js"></script>
+  <!-- <script src="./lib/typed/typed.js"></script> -->
+  <script src="./lib/animations/js/css3-animate-it.js"></script>
+  <script src="./lib/_common/main.js"></script>
+  <!-- <script src="./lib/bars/bars.js"></script> -->
+  <script src="./lib/pure.js/2.83/pure.js"></script>
+  <script src="./lib/_index/index.js"></script>
+
 
 </html>
